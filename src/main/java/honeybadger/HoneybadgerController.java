@@ -11,4 +11,9 @@ public class HoneybadgerController {
         return "test route";
     }
 
+    @RequestMapping("/test")
+    public String test() {
+    	return "test";
+    }
+
 }
