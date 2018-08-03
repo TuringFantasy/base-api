@@ -1,4 +1,4 @@
-package hello;
+package honeybadger;
 
 import java.util.Arrays;
 
