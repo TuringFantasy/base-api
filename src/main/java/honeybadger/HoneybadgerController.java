@@ -1,17 +1,20 @@
 package honeybadger;
 
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @RestController
 public class HoneybadgerController {
 
-    @RequestMapping("/")
+    @GetMapping("/")
+    @ResponseBody
     public String index() {
         return "test route";
     }
 
-    @RequestMapping("/test")
+    @GetMapping("/test")
+    @ResponseBody
     public String test() {
     	return "test";
     }
