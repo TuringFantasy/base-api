@@ -10,12 +10,14 @@ pipeline {
 	stages {
 		stage('Test') {
 			steps {
-
+				echo "Running tests"
+				sh 'mvn sonar:sonar'
 			}
 		}
 		stage('Build') {
 			steps {
-
+				echo "building an artifact"
+				sh 'mvn package'
 			}
 		}
 		stage('Deploy - development') {
@@ -24,6 +26,8 @@ pipeline {
 			}
 			steps {
 				echo "Packaging development artifacts"
+				sh 'mvn package'
+				// deployment code for dev here
 			}
 		}
 		stage('Deploy - production') {
@@ -32,6 +36,8 @@ pipeline {
 			}
 			steps {
 				echo "Packaging production artifacts"
+				sh 'mvn package'
+				// deployment code for prod here
 			}
 		}
 	}
