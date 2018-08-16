@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -27,13 +28,24 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-s3</artifactId>
+            <version>1.11.383</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot</artifactId>
+            <version>1.16</version>
+        </dependency>
     </dependencies>
 
     <properties>
         <java.version>1.8</java.version>
+        <aws.access.key>AKIAIZ4HXWRV4OXZ4VNQ</aws.access.key>
+        <aws.secret>ENC(eR2kyyxVCgwMqVl2k/mRAZUZIw+CbGMWh8RHNWSCnJz/c4CRskn9ooaQs1Z9otvQCaT8byiGikc=)</aws.secret>
     </properties>
-
-
+    
     <build>
         <plugins>
             <plugin>

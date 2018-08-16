@@ -2,6 +2,15 @@
 
 Simple codebase to use as template for API in a given tech challenge.
 
+# JENKINS CONFIGURATION
+
+* `AWS_DEFAULT_REGION = 'us-east-1'`
+* `DEV_URL = "ec2-18-206-153-41.compute-1.amazonaws.com"`
+* `PROD_URL = "ec2-34-231-229-103.compute-1.amazonaws.com"`
+* `ECR_REPO = "543447831277.dkr.ecr.us-east-1.amazonaws.com/virtual-hb-api"`
+* `JENKINS_URL = "ec2-34-239-178-45.compute-1.amazonaws.com"`
+* `RELEASE_BUCKET = "zolon-hb-releases"`
+
 # How to use this codebase
 
 * `git clone https://github.com/ZolonTech/base-api`
